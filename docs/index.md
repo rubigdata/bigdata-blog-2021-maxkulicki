@@ -1,5 +1,4 @@
 ---
----
 # Hello!
 
 Name: Maks Kulicki
@@ -8,5 +7,5 @@ Student number: s1020170
 
 Course programme: Artificial Intelligence
 
-- [Non-existent link 1](https://www.google.com)
-- [Non-existent link 2](https://www.google.com)
+- [Assignment 1](https://github.com/rubigdata/bigdata-blog-2021-maxkulicki/blob/master/docs/blogpost1.md)
+- Assignment 2 (not done yet)
