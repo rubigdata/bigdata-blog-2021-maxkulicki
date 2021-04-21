@@ -8,6 +8,9 @@ The second notebook explored a second dataset, with all buildings in Nijmegen an
 
 Then, I looked at the artworks that were not successfully matched with the address database, their location and year of creation. It seems that both the year and location are spread around, without any clear pattern. It might be that they just don't precisely match any address because they are in some weird spots.
 
+![brave_MnDNesZ2Dy](https://user-images.githubusercontent.com/49609518/115582923-b2fd4100-a2c9-11eb-9910-660fb069c86a.png)
+
 ![brave_NzJzyinS52](https://user-images.githubusercontent.com/49609518/115581994-cf4cae00-a2c8-11eb-9cef-df61592502a1.png)
+
 
 This assignment gave a good overview of the Dataset API, as well as the process of cleaning, querying and visualising data using Spark, which are essential skills for any kind of data analysis.
