@@ -46,8 +46,13 @@ data.show
 ```
 
 First, it filters out records that are invalid or contain no header. I wanted to restrict my search to Dutch webistes only, so the next step is to check the URLs and keep only the ones with Dutch domain name: ".nl". Then, it looks at the webpage title and checks if it contains 3 regular expressions: one with price in euros, one with a Dutch city name (restricted to the cities where one can study Artificial Intelligence, due to personal interest), and one with some kind of accomodation: room, apartment, or studio. Then, if the title contains all these regular expressions, the program extracts the phrases matching these expressions and stores them in a DataFrame. This way, the data is stored in a distributed tabular representation, which enables easy analysis using SQL queries, like this one here, which is a result of running the code on the Zeppelin notebook over the small Kamernet crawl: 
+
 ![image](https://user-images.githubusercontent.com/49609518/124577744-d4dc7d80-de4d-11eb-8dbd-26a5e6bcb28e.png)
 
 ## Deployment on cluster
 
-After seeing that the code indeed does the job in the notebook, it was time to try to deploy it on the cluster. First, I converted into a standalone app and tried to run it in my local container, over the Kamernet crawl. I managed to do it by simply following the steps in the tutorial.
+After seeing that the code indeed does the job in the notebook, it was time to try to deploy it on the cluster. First, I converted it into a standalone app and tried running it in my local container, over the Kamernet crawl. I managed to do it by simply following the steps in the tutorial. 
+
+Then, I ran that app on the Redbad cluster. First, I only used one randomly selected warc file. It ran, but the file contained no websites matching my criteria. so it returned no results. Then, I tried running it over one of the folders full of warc files, again, with no results. It took 2.5 hours to execute so I decided not to run my program over the full crawl because of the infeasible runtime.
+
+
