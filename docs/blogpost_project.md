@@ -1,4 +1,4 @@
-# Big data final project 
+# Big data project - Maksymilian Kulicki (s1020170)
 
 ## Idea
 My idea for the project was to use the common crawl to look at housing data in the Netherlands. I have been struggling a lot with finding a place for myself in the Netherlands, so I thought tackling the problem with the help of Big Data might be very useful. There are many different websites that have housing offers and crawling gives an opportunity to look at all of them in a systematic manner. The goal is to identify these webistes and extract the relevant infromation - type of accomodation, location, and price.
