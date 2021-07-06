@@ -49,9 +49,9 @@ First, it filters out records that are invalid or contain no header. I wanted to
 
 ![image](https://user-images.githubusercontent.com/49609518/124577744-d4dc7d80-de4d-11eb-8dbd-26a5e6bcb28e.png)
 
-## Deployment on cluster
+## Deployment on cluster and final remarks
 
-After seeing that the code indeed does the job in the notebook, it was time to try to deploy it on the cluster. First, I converted it into a standalone app and tried running it in my local container, over the Kamernet crawl. I managed to do it by simply following the steps in the tutorial. 
+After seeing that the code indeed does the job in the notebook, it was time to try to deploy it on the cluster. First, I converted it into a standalone app and tried running it in my local container, over the Kamernet crawl. I managed to do it by simply following the steps in the tutorial - putting it inside a main function, shipping the function to the proper location in the container, and assembling it using sbt. The results were the same as in the notebook trial.
 
 Then, I ran that app on the Redbad cluster. First, I only used one randomly selected warc file. It complied and ran successfully, but the file contained no websites matching my criteria. so it returned no results. Then, I tried running it over one of the many folders full of warc files, again, with no results. It took 2.5 hours to execute so I decided not to run my program over the full crawl, due to the infeasible runtime and the fact that the cluster was still very busy with other people's jobs. 
 
