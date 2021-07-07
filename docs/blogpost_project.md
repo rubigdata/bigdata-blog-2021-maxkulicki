@@ -1,7 +1,7 @@
 # Big data project - Maksymilian Kulicki (s1020170)
 
 ## Idea
-My idea for the project was to use the common crawl to look at housing data in the Netherlands. I have been struggling a lot with finding a place for myself in the Netherlands, so I thought tackling the problem with the help of Big Data might be very useful. There are many different websites that have housing offers and crawling gives an opportunity to look at all of them in a systematic manner. The goal is to identify these webistes and extract the relevant infromation - type of accomodation, location, and price.
+My idea for the project was to use the common crawl to look at housing data in the Netherlands. I have been struggling a lot with finding a place for myself in the Netherlands, so I thought tackling the problem with the help of Big Data might be very useful. There are many different websites that have housing offers and crawling gives an opportunity to look at all of them in a systematic manner. The goal is to identify these websites and extract the relevant infromation - type of accomodation, location, and price.
 
 I inspected the html structure of different housing websites and found out that usually all the essential information can be found in the title of the page. Because of that, my first attempt involved extracting information from titles only. This approach is probably quicker than going through the whole page, because it involves a dedicated Jsoup function .title(). It also filters out all sites which might mention something about rooms and prices, but which do not contain offers themselves. 
 
